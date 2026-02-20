@@ -1,0 +1,233 @@
+/* =====================================================
+   TASK 1 — GLOBAL STYLES (Typography + Colors)
+===================================================== */
+
+:root {
+    --primary-color: #1e3a8a;
+    --accent-color: #f59e0b;
+    --bg-light: gray;
+    --text-main: #1f2937;
+    --card-bg: #ffffff;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: lightblue;
+    color: var(--text-main);
+    margin: 0;
+    padding: 20px;
+    line-height: 1.6;
+}
+
+h1, h2, h3, h4 {
+    font-family: Georgia, serif;
+    color: var(--primary-color);
+}
+
+
+/* =====================================================
+   HEADER DESIGN
+===================================================== */
+
+header {
+    background: var(--card-bg);
+    padding: 20px;
+    border-radius: 10px;
+    margin-bottom: 20px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+}
+
+
+/* =====================================================
+   TASK 2 — NAVIGATION & BUTTONS
+===================================================== */
+
+nav ul {
+    list-style: none;
+    padding: 0;
+}
+
+nav li {
+    display: inline-block;
+    margin-right: 10px;
+}
+
+a {
+    text-decoration: none;
+    color: white;
+    background: var(--primary-color);
+    padding: 8px 12px;
+    border-radius: 6px;
+    transition: 0.3s;
+}
+
+a:hover {
+    background: var(--accent-color);
+}
+
+button {
+    background: var(--primary-color);
+    color: white;
+    border: none;
+    padding: 10px 15px;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+button:hover {
+    background: var(--accent-color);
+}
+
+button:active {
+    transform: scale(0.95);
+}
+
+input:focus {
+    outline: 2px solid var(--accent-color);
+}
+
+
+/* =====================================================
+   SECTIONS DESIGN
+===================================================== */
+
+section {
+    background: var(--card-bg);
+    padding: 20px;
+    margin-bottom: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.08);
+}
+
+aside {
+    background: var(--card-bg);
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.08);
+}
+
+
+/* =====================================================
+   TASK 3 — PRODUCT CARDS
+===================================================== */
+
+article {
+    width: 220px;
+    display: inline-block;
+    margin: 10px;
+    padding: 15px;
+    border-radius: 12px;
+    background: white;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+    vertical-align: top;
+    transition: 0.3s;
+}
+
+article:hover {
+    transform: translateY(-5px);
+}
+
+article img {
+    width: 100%;
+    border-radius: 10px;
+}
+
+/* Alternate card color */
+article:nth-child(even) {
+    background: #f9fafb;
+}
+
+
+/* =====================================================
+   TASK 4 — ADVANCED SELECTORS
+===================================================== */
+
+/* Empty cart */
+.cart-items:empty {
+    border: 2px dashed red;
+    padding: 20px;
+    background: #ffe4e6;
+    border-radius: 10px;
+}
+
+/* Currency symbol */
+.price::before {
+    content: "₱";
+    font-weight: bold;
+}
+
+/* Required fields */
+input:required {
+    border: 2px solid #0a0101;
+    padding: 5px;
+    border-radius: 5px;
+}
+
+/* Valid fields */
+input:valid {
+    border: 2px solid #22c55e;
+}
+
+
+/* =====================================================
+   TASK 5 — TABLE
+===================================================== */
+
+table {
+    border-collapse: collapse;
+    width: 60%;
+    background: white;
+    border-radius: 8px;
+    overflow: hidden;
+}
+
+table th, table td {
+    border: 1px solid #ddd;
+    padding: 10px;
+}
+
+td:first-child {
+    font-weight: bold;
+    color: var(--primary-color);
+}
+
+/* Order list marker */
+.order-list li::marker {
+    color: var(--accent-color);
+    font-size: 20px;
+}
+
+
+/* =====================================================
+   REVIEWS QUOTES
+===================================================== */
+
+blockquote {
+    background: #f9fafb;
+    padding: 15px;
+    border-left: 5px solid var(--accent-color);
+    border-radius: 6px;
+    margin: 15px 0;
+}
+
+blockquote::before {
+    content: "“";
+    font-size: 30px;
+    color: var(--accent-color);
+}
+
+blockquote::after {
+    content: "”";
+    font-size: 30px;
+    color: var(--accent-color);
+}
+
+
+/* =====================================================
+   EXTRA DESIGN — IMAGES
+===================================================== */
+
+img {
+    border-radius: 8px;
+}

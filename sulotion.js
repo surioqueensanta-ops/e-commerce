@@ -11,6 +11,8 @@ function checkVariable(input) {
             return 'bigint';
         case 'undefined':
             return 'undefined';
+        case 'object':
+            return 'object';
         default:
             return 'object';
     }
@@ -28,16 +30,14 @@ console.log(checkVariable([]));
 
 
 function generateIDs(count) {
-    const ids = [];
-    
+    let result = [];
     for (let i = 0; i < count; i++) {
         if (i === 5) {
-            continue;
+            continue; 
         }
-        ids.push(`ID-${i}`);
+        result.push(`ID-${i}`);
     }
-    
-    return ids;
+    return result;
 }
 
 console.log('\n=== Problem 2: Secure ID Generator ===');
@@ -46,11 +46,11 @@ console.log(generateIDs(5));
 
 
 function calculateTotal(...numbers) {
-    numbers.forEach(num => {
-        if (typeof num !== 'number') {
-            throw new TypeError('Invalid input: All arguments must be numbers');
+    for (let i = 0; i < numbers.length; i++) {
+        if (typeof numbers[i] !== 'number') {
+            throw new TypeError("Invalid input: All arguments must be numbers");
         }
-    });
+    }
     
     return numbers.reduce((sum, current) => sum + current, 0);
 }
@@ -63,9 +63,10 @@ console.log(calculateTotal());
 
 function getTopScorers(playerList) {
     return playerList
-        .filter(player => player.score > 8)   
-        .map(player => player.name)             
-        .join(', ');                            
+        .filter(player => player.score > 8)
+        .map(player => player.name)
+        .join(", ");
+                            
 }
 
 
@@ -87,18 +88,18 @@ console.log(getTopScorers(players));
 
 
 class Item {
-  
+
     #discount = 0.1;
     
     constructor(name, price) {
         this.name = name;
         this.price = price;
     }
-    
+
     get finalPrice() {
         return this.price - (this.price * this.#discount);
     }
-    
+
     displayInfo() {
         console.log(`${this.name}: Original Price = ₱${this.price}, Final Price = ₱${this.finalPrice}`);
     }
@@ -121,13 +122,13 @@ console.log('Accessing discount directly:', item1.discount);
 function safeDivide(a, b) {
     try {
         if (b === 0) {
-            throw new Error('Cannot divide by zero');
+            throw new Error("Cannot divide by zero");
         }
         return a / b;
     } catch (error) {
         return error.message;
     } finally {
-        console.log('Operation attempted');
+        console.log("Operation attempted");
     }
 }
 

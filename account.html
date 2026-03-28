@@ -8,7 +8,7 @@
 </head>
 <body>
     <header>
-        <h1>Welcome, Queensanta!</h1>
+        <h1 id="welcome-header">Welcome, Guest!</h1>
         <nav>
             <ul>
                 <li><a href="landing.html">Home</a></li>
@@ -21,18 +21,12 @@
     </header>
 
     <section>
-        <h2>Previous Purchases</h2>
-        <details>
-            <summary>Order #1235</summary>
-            <p>Date: Feb 11, 2026</p>
-            <p>Total: <span class="price">50</span></p>
-        </details>
-
-        <details>
-            <summary>Order #1236</summary>
-            <p>Date: Feb 12, 2026</p>
-            <p>Total: <span class="price">55</span></p>
-        </details>
+        <h2>Order History</h2>
+        <div id="order-history-container">
+            <!-- Orders will be dynamically loaded here -->
+        </div>
     </section>
+
+    <script src="script.js"></script>
 </body>
 </html>

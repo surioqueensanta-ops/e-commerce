@@ -2,48 +2,75 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Product Detail</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Product Details - Wireless Headphones</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
+    <header>
+        <h1>Product Details</h1>
+        <nav>
+            <ul>
+                <li><a href="landing.html">Home</a></li>
+                <li><a href="products.html">Products</a></li>
+                <li><a href="cart.html">Cart</a></li>
+                <li><a href="account.html">Account</a></li>
+                <li><a href="signup.html">Sign Up</a></li>
+            </ul>
+        </nav>
+    </header>
 
-<main>
-
-    <section>
-        <h2>Wireless Headphones</h2>
-        <link rel="stylesheet" href="style.css">
-        <img src="headphone.png" alt="Wireless Headphones" width="200">
-        <p>Price: ₱1,500</p>
-
-        <h3>Specifications</h3>
-        <table Border="1">
-            <tr>
-                <th>Feature</th>
-                <th>Details</th>
-            </tr>
-            <tr>
-                <td>Battery Life</td>
-                <td>10 Hours</td>
-            </tr>
-            <tr>
-                <td>Connectivity</td>
-                <td>Bluetooth 5.0</td>
-            </tr>
-        </table>
-
-        <form>
-            <label>Quantity:
-                <input type="number" min="1" value="1">
-            </label>
-            <button type="button" onclick="window.location.href='cart.html'">Add to Cart</button>
-        </form>
-
+    <main class="product-detail">
         <section>
-            <h4>Reviews</h4>
-            <blockquote>
-                "Very clear sound quality!"
-                <p>-Jaira Rayandayan</p>
-            </blockquote>
+            <h2>Wireless Headphones</h2>
+            <img src="headphone.png" alt="Wireless Headphones" width="300">
+            <p class="price">890</p>
+
+            <h3>Specifications</h3>
+            <table border="1">
+                <tr>
+                    <th>Feature</th>
+                    <th>Details</th>
+                </tr>
+                <tr>
+                    <td>Battery Life</td>
+                    <td>10 Hours</td>
+                </tr>
+                <tr>
+                    <td>Connectivity</td>
+                    <td>Bluetooth 5.0</td>
+                </tr>
+                <tr>
+                    <td>Noise Cancellation</td>
+                    <td>Active Noise Cancelling</td>
+                </tr>
+                <tr>
+                    <td>Color</td>
+                    <td>Black, White, Blue</td>
+                </tr>
+            </table>
+
+            <div class="form-group">
+                <label>Quantity:
+                    <input type="number" id="quantity-1" min="1" value="1">
+                </label>
+                <button type="button" class="add-to-cart-detail" data-id="1">Add to Cart</button>
+            </div>
+
+            <section>
+                <h4>Reviews</h4>
+                <blockquote>
+                    "Very clear sound quality!"
+                    <p>- Jaira Rayandayan</p>
+                </blockquote>
+                <blockquote>
+                    "Great battery life and comfortable to wear."
+                    <p>- Michael Santos</p>
+                </blockquote>
+            </section>
         </section>
-    </section>
+    </main>
+
+    <script src="script.js"></script>
 </body>
 </html>

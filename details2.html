@@ -3,48 +3,74 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Product Details - Casual T-Shirt</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
+    <header>
+        <h1>Product Details</h1>
+        <nav>
+            <ul>
+                <li><a href="landing.html">Home</a></li>
+                <li><a href="products.html">Products</a></li>
+                <li><a href="cart.html">Cart</a></li>
+                <li><a href="account.html">Account</a></li>
+                <li><a href="signup.html">Sign Up</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main class="product-detail">
         <section>
-        <link rel="stylesheet" href="style.css">
-        <h2>Casual T-Shirt</h2>
-        <img src="tshirt-.png" alt="Casual T-Shirt" width="200">
-        <p>Price: ₱399</p>
+            <h2>Casual T-Shirt</h2>
+            <img src="tshirt.png" alt="Casual T-Shirt" width="300">
+            <p class="price">399</p>
 
-        <h3>Specifications</h3>
-        <table Border="1">
-            <tr>
-                <th>Feature</th>
-                <th>Details</th>
-            </tr>
-            <tr>
-                <td>Material</td>
-                <td>Cotton</td>
-            </tr>
-            <tr>
-                <td>Size</td>
-                <td>Small, Medium, Large</td>
-            </tr>
-        </table>
+            <h3>Specifications</h3>
+            <table border="1">
+                <tr>
+                    <th>Feature</th>
+                    <th>Details</th>
+                </tr>
+                <tr>
+                    <td>Material</td>
+                    <td>100% Cotton</td>
+                </tr>
+                <tr>
+                    <td>Size</td>
+                    <td>Small, Medium, Large, XL</td>
+                </tr>
+                <tr>
+                    <td>Color</td>
+                    <td>Black, White, Gray, Navy</td>
+                </tr>
+                <tr>
+                    <td>Fit</td>
+                    <td>Regular Fit</td>
+                </tr>
+            </table>
 
-        <form>
-            <label>Quantity:
-                <input type="number" min="1" value="1">
-            </label>
-            <button type="button" onclick="window.location.href='cart.html'">Add to Cart</button>
-        </form>
+            <div class="form-group">
+                <label>Quantity:
+                    <input type="number" id="quantity-3" min="1" value="1">
+                </label>
+                <button type="button" class="add-to-cart-detail" data-id="3">Add to Cart</button>
+            </div>
 
-        <section>
-            <h4>Reviews</h4>
-            <blockquote>
-                
-                "Very comfortable to wear."
-                <p>-Denzel Senobio</p>
-            </blockquote>
+            <section>
+                <h4>Reviews</h4>
+                <blockquote>
+                    "Very comfortable to wear. Great quality!"
+                    <p>- Denzel Senobio</p>
+                </blockquote>
+                <blockquote>
+                    "Fits perfectly and the fabric is soft."
+                    <p>- Maria Reyes</p>
+                </blockquote>
+            </section>
         </section>
-    </section>
+    </main>
 
-</main>
+    <script src="script.js"></script>
 </body>
 </html>

@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>SHOPPING CART</title>
+    <title>Shopping Cart</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
@@ -15,35 +15,24 @@
                 <li><a href="products.html">Products</a></li>
                 <li><a href="cart.html">Cart</a></li>
                 <li><a href="account.html">Account</a></li>
+                <li><a href="signup.html">Sign Up</a></li>
             </ul>
         </nav>
     </header>
 
     <div class="cart-container">
         <section>
-            <ul>
-                <li>
-                    <img src="headphone.png" alt="Wireless Headphones">
-                    <h3>WIRELESS HEADPHONES</h3>
-                    <p class="price">1,500</p>
-                    <input type="number" value="1" min="1">
-                </li>
-                <li>
-                    <img src="tshirt-.png" alt="Casual T-Shirt">
-                    <h3>CASUAL TSHIRT</h3>
-                    <p class="price">399</p>
-                    <input type="number" value="1" min="1">
-                </li>
-            </ul>
+            <h2>Cart Items</h2>
+            <ul class="cart-list"></ul>
         </section>
 
         <aside>
             <h2>Cart Summary</h2>
-            <p>Subtotal: <span class="price">1,899</span></p>
-            <p>Shipping: <span class="price">100</span></p>
-            <p><strong>Total: <span class="price">1,999</span></strong></p>
-            <a href="checkout.html" style="display: block; text-align: center;">Proceed to Checkout</a>
+            <p>Total: <span class="cart-total">0</span></p>
+            <a href="checkout.html">Proceed to Checkout</a>
         </aside>
     </div>
+
+    <script src="script.js"></script>
 </body>
 </html>

@@ -3,14 +3,14 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Shopping Cart | Wander Store</title>
+  <title>Wander Store | Home</title>
   <link rel="stylesheet" href="surio.css">
 </head>
 <body>
 
 <header>
   <h1>🛍️ Wander Store</h1>
-  <p>Your shopping cart</p>
+  <p>Your one-stop shop for quality products</p>
 </header>
 
 <nav>
@@ -22,19 +22,14 @@
 </nav>
 
 <main>
-  <h1>Your Cart <span class="cart-count" style="font-size: 1rem;">0</span></h1>
+  <section class="hero">
+    <h1>Welcome to Wander Store</h1>
+    <p>Discover amazing products at unbeatable prices!</p>
+    <a href="products.html" class="btn">Shop Now</a>
+  </section>
 
-  <div class="cart-container">
-    <!-- Cart items will be dynamically inserted here -->
-  </div>
-
-  <div class="order-summary">
-    <h3>Order Summary</h3>
-    <p>Subtotal: <span class="price" id="cart-subtotal">0</span></p>
-    <p>Shipping: ₱50</p>
-    <hr>
-    <p><strong>Total: <span class="price" id="cart-total">0</span></strong></p>
-    <a href="checkout.html" class="btn checkout-btn">Proceed to Checkout</a>
+  <h2>⭐ Featured Products</h2>
+  <div class="products-grid" id="featured-products-grid">
   </div>
 </main>
 

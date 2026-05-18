@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Headphones | Product Details - Wander Store</title>
+  <link rel="stylesheet" href="surio.css">
+</head>
+<body>
+
+<header>
+  <h1>🛍️ Wander Store</h1>
+  <p>Quality products at great prices</p>
+</header>
+
+<nav>
+  <a href="landing.html">Home</a>
+  <a href="products.html">Products</a>
+  <a href="cart.html">Cart</a>
+  <a href="account.html">Account</a>
+  <a href="login.html">Login</a>
+</nav>
+
+<main>
+  <section class="product-detail">
+    <div class="product-images">
+      <img src="headphones.png" alt="Wireless Headphones" width="300" onerror="this.src='https://via.placeholder.com/300'">
+    </div>
+    
+    <div class="product-info">
+      <h1>Wireless Headphones</h1>
+      <p class="price">1299</p>
+      <p class="description">Noise cancelling bluetooth headphones with 30-hour battery life. Premium sound quality for music and calls.</p>
+      
+      <h3>Technical Specifications</h3>
+      <div class="table-wrapper">
+        <table class="product-specs">
+          <thead>
+            <tr>
+              <th>Feature</th>
+              <th>Value</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>Type</td>
+              <td>Over-Ear Wireless</td>
+            </tr>
+            <tr>
+              <td>Connectivity</td>
+              <td>Bluetooth 5.0</td>
+            </tr>
+            <tr>
+              <td>Battery Life</td>
+              <td>30 hours</td>
+            </tr>
+            <tr>
+              <td>Noise Cancelling</td>
+              <td>Active Noise Cancelling</td>
+            </tr>
+            <tr>
+              <td>Compatibility</td>
+              <td>iOS, Android, Windows</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+      
+      <div class="add-to-cart-form">
+        <label for="quantity">Quantity:</label>
+        <input type="number" id="quantity" name="quantity" value="1" min="1" max="10">
+        <button class="btn add-to-cart-detail" data-id="9" data-name="Wireless Headphones" data-price="1299">🛒 Add to Cart</button>
+      </div>
+    </div>
+  </section>
+
+  <section class="reviews-section">
+    <h2>Customer Reviews</h2>
+    
+    <article class="review-item">
+      <blockquote class="review">
+        "Amazing sound quality! The noise cancelling works perfectly."
+      </blockquote>
+      <p class="review-author">- Ryan M. ⭐⭐⭐⭐⭐</p>
+      <p class="review-date">Verified Purchase | January 15, 2025</p>
+    </article>
+    
+    <article class="review-item">
+      <blockquote class="review">
+        "Very comfortable and battery lasts forever. Highly recommend!"
+      </blockquote>
+      <p class="review-author">- Sophia L. ⭐⭐⭐⭐⭐</p>
+      <p class="review-date">Verified Purchase | January 10, 2025</p>
+    </article>
+  </section>
+
+  <section class="related-products">
+    <h2>You Might Also Like</h2>
+    <div class="products-grid">
+      <article class="product-card">
+        <img src="powerbank.png" alt="Powerbank" onerror="this.src='https://via.placeholder.com/150'">
+        <h3>Powerbank</h3>
+        <p class="price">599</p>
+        <a href="detail-powerbank.html" class="btn-small">View</a>
+      </article>
+      <article class="product-card">
+        <img src="mouse.png" alt="Mouse" onerror="this.src='https://via.placeholder.com/150'">
+        <h3>Wireless Mouse</h3>
+        <p class="price">229</p>
+        <a href="detail-mouse.html" class="btn-small">View</a>
+      </article>
+    </div>
+  </section>
+</main>
+
+<footer>
+  <p>&copy; 2024 Wander Store. All rights reserved.</p>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>

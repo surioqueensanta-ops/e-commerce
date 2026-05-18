@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Laptop Backpack | Product Details - Wander Store</title>
+  <link rel="stylesheet" href="surio.css">
+</head>
+<body>
+
+<header>
+  <h1>🛍️ Wander Store</h1>
+  <p>Quality products at great prices</p>
+</header>
+
+<nav>
+  <a href="landing.html">Home</a>
+  <a href="products.html">Products</a>
+  <a href="cart.html">Cart</a>
+  <a href="account.html">Account</a>
+  <a href="login.html">Login</a>
+</nav>
+
+<main>
+  <section class="product-detail">
+    <div class="product-images">
+      <img src="bag.png" alt="Laptop Backpack" width="300" onerror="this.src='https://via.placeholder.com/300'">
+    </div>
+    
+    <div class="product-info">
+      <h1>Laptop Backpack</h1>
+      <p class="price">999</p>
+      <p class="description">Water resistant 15.6 inch laptop bag with USB charging port. Perfect for travel and daily commute.</p>
+      
+      <h3>Technical Specifications</h3>
+      <div class="table-wrapper">
+        <table class="product-specs">
+          <thead>
+            <tr>
+              <th>Feature</th>
+              <th>Value</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>Capacity</td>
+              <td>15.6 inch Laptop</td>
+            </tr>
+            <tr>
+              <td>Material</td>
+              <td>Water Resistant Polyester</td>
+            </tr>
+            <tr>
+              <td>Features</td>
+              <td>USB Charging Port, Anti-theft</td>
+            </tr>
+            <tr>
+              <td>Compartments</td>
+              <td>Multiple pockets</td>
+            </tr>
+            <tr>
+              <td>Color</td>
+              <td>Black/Gray</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+      
+      <div class="add-to-cart-form">
+        <label for="quantity">Quantity:</label>
+        <input type="number" id="quantity" name="quantity" value="1" min="1" max="10">
+        <button class="btn add-to-cart-detail" data-id="10" data-name="Laptop Backpack" data-price="999">🛒 Add to Cart</button>
+      </div>
+    </div>
+  </section>
+
+  <section class="reviews-section">
+    <h2>Customer Reviews</h2>
+    
+    <article class="review-item">
+      <blockquote class="review">
+        "Very spacious and durable. The USB charging port is super convenient!"
+      </blockquote>
+      <p class="review-author">- Daniel K. ⭐⭐⭐⭐⭐</p>
+      <p class="review-date">Verified Purchase | January 18, 2025</p>
+    </article>
+    
+    <article class="review-item">
+      <blockquote class="review">
+        "Perfect for travel. Fits my 15-inch laptop perfectly."
+      </blockquote>
+      <p class="review-author">- Michelle R. ⭐⭐⭐⭐⭐</p>
+      <p class="review-date">Verified Purchase | January 12, 2025</p>
+    </article>
+  </section>
+
+  <section class="related-products">
+    <h2>You Might Also Like</h2>
+    <div class="products-grid">
+      <article class="product-card">
+        <img src="headphones.png" alt="Headphones" onerror="this.src='https://via.placeholder.com/150'">
+        <h3>Wireless Headphones</h3>
+        <p class="price">1299</p>
+        <a href="detail-headphones.html" class="btn-small">View</a>
+      </article>
+      <article class="product-card">
+        <img src="powerbank.png" alt="Powerbank" onerror="this.src='https://via.placeholder.com/150'">
+        <h3>Powerbank</h3>
+        <p class="price">599</p>
+        <a href="detail-powerbank.html" class="btn-small">View</a>
+      </article>
+    </div>
+  </section>
+</main>
+
+<footer>
+  <p>&copy; 2024 Wander Store. All rights reserved.</p>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>T-Shirt | Product Details - Surio Store</title>
+  <link rel="stylesheet" href="surio.css">
+</head>
+<body>
+
+<header>
+  <h1>🛍️ Wander Store</h1>
+  <p>Quality products at great prices</p>
+</header>
+
+<nav>
+  <a href="landing.html">Home</a>
+  <a href="products.html">Products</a>
+  <a href="cart.html">Cart</a>
+  <a href="account.html">Account</a>
+</nav>
+
+<main>
+  <section class="product-detail">
+    <div class="product-images">
+      <img src="tshirt.png" alt="Cotton T-Shirt" width="300" onerror="this.src='https://via.placeholder.com/300'">
+    </div>
+    
+    <div class="product-info">
+      <h1>Classic Cotton T-Shirt</h1>
+      <p class="price">250</p>
+      <p class="description">100% premium cotton t-shirt, comfortable and breathable. Perfect for everyday wear.</p>
+      
+      <h3>Technical Specifications</h3>
+      <table class="product-specs">
+        <thead>
+          <tr>
+            <th>Feature</th>
+            <th>Value</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>Color</td>
+            <td>Black</td>
+          </tr>
+          <tr>
+            <td>Size</td>
+            <td>Medium</td>
+          </tr>
+          <tr>
+            <td>Material</td>
+            <td>100% Cotton</td>
+          </tr>
+          <tr>
+            <td>Fit</td>
+            <td>Regular</td>
+          </tr>
+          <tr>
+            <td>Care Instructions</td>
+            <td>Machine Washable</td>
+          </tr>
+        </tbody>
+      </table>
+      
+      <form action="cart.html" method="get" class="add-to-cart-form">
+        <label for="quantity">Quantity:</label>
+        <input type="number" id="quantity" name="quantity" value="1" min="1" max="10">
+        <input type="hidden" name="product" value="T-Shirt">
+        <input type="hidden" name="price" value="250">
+        <button type="submit">🛒 Add to Cart</button>
+      </form>
+    </div>
+  </section>
+
+  <section class="reviews-section">
+    <h2>Customer Reviews</h2>
+    
+    <article class="review-item">
+      <blockquote class="review">
+        "Comfortable and stylish! The fabric is very soft and breathable."
+      </blockquote>
+      <p class="review-author">- Maria S. ⭐⭐⭐⭐⭐</p>
+      <p class="review-date">Verified Purchase | December 20, 2024</p>
+    </article>
+    
+    <article class="review-item">
+      <blockquote class="review">
+        "Perfect fit and great quality for the price. Will buy again."
+      </blockquote>
+      <p class="review-author">- James W. ⭐⭐⭐⭐⭐</p>
+      <p class="review-date">Verified Purchase | December 14, 2024</p>
+    </article>
+    
+    <article class="review-item">
+      <blockquote class="review">
+        "The cotton material is high quality. Doesn't shrink after washing."
+      </blockquote>
+      <p class="review-author">- Lisa T. ⭐⭐⭐⭐</p>
+      <p class="review-date">Verified Purchase | December 9, 2024</p>
+    </article>
+  </section>
+
+  <section class="related-products">
+    <h2>You Might Also Like</h2>
+    <div class="products-grid">
+      <article class="product-card">
+        <img src="jeans.png" alt="Pants" onerror="this.src='https://via.placeholder.com/150'">
+        <h3>Denim Pants</h3>
+        <p class="price">300</p>
+        <a href="detail-pants.html" class="btn-small">View</a>
+      </article>
+      <article class="product-card">
+        <img src="shoes.png" alt="Shoes" onerror="this.src='https://via.placeholder.com/150'">
+        <h3>Sports Shoes</h3>
+        <p class="price">850</p>
+        <a href="detail-shoes.html" class="btn-small">View</a>
+      </article>
+    </div>
+  </section>
+</main>
+
+<footer>
+  <p>&copy; 2024 Surio Store. All rights reserved.</p>
+</footer>
+
+</body>
+</html>

@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>All Products | Wander Store</title>
+  <link rel="stylesheet" href="surio.css">
+</head>
+<body>
+
+<header>
+  <h1>🛍️ Wander Store</h1>
+  <p>Browse our collection</p>
+</header>
+
+<nav>
+  <a href="landing.html">Home</a>
+  <a href="products.html">Products</a>
+  <a href="cart.html">Cart</a>
+  <a href="account.html">Account</a>
+  <a href="login.html">Login</a>
+</nav>
+
+<main class="products-page">
+  <aside>
+    <h3>🔍 Filter Products</h3>
+    <form id="filter-form">
+      <h4>Category</h4>
+      <label><input type="checkbox" value="Electronics" class="filter-category"> Electronics</label>
+      <label><input type="checkbox" value="Clothing" class="filter-category"> Clothing</label>
+      <label><input type="checkbox" value="Accessories" class="filter-category"> Accessories</label>
+      <label><input type="checkbox" value="Footwear" class="filter-category"> Footwear</label>
+      
+      <h4>Price Range</h4>
+      <label><input type="radio" name="price" value="all" checked> All Prices</label>
+      <label><input type="radio" name="price" value="under500"> Under ₱500</label>
+      <label><input type="radio" name="price" value="500-1000"> ₱500 - ₱1000</label>
+      <label><input type="radio" name="price" value="over1000"> Over ₱1000</label>
+    </form>
+  </aside>
+
+  <div class="products-container">
+    <h1>All Products <span style="font-size: 0.9rem;" id="product-count">(0 items)</span></h1>
+    <div class="products-grid" id="products-grid">
+    </div>
+  </div>
+</main>
+
+<footer>
+  <p>&copy; 2024 Wander Store. All rights reserved.</p>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>

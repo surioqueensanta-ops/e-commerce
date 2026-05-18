@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Socks | Product Details - Wander Store</title>
+  <link rel="stylesheet" href="surio.css">
+</head>
+<body>
+
+<header>
+  <h1>🛍️ Wander Store</h1>
+  <p>Quality products at great prices</p>
+</header>
+
+<nav>
+  <a href="landing.html">Home</a>
+  <a href="products.html">Products</a>
+  <a href="cart.html">Cart</a>
+  <a href="account.html">Account</a>
+  <a href="login.html">Login</a>
+</nav>
+
+<main>
+  <section class="product-detail">
+    <div class="product-images">
+      <img src="socks.png" alt="Cotton Socks" width="300" onerror="this.src='https://via.placeholder.com/300'">
+    </div>
+    
+    <div class="product-info">
+      <h1>Cotton Socks</h1>
+      <p class="price">99</p>
+      <p class="description">Soft and breathable cotton socks for everyday comfort. Perfect for work, sports, or casual wear.</p>
+      
+      <h3>Technical Specifications</h3>
+      <div class="table-wrapper">
+        <table class="product-specs">
+          <thead>
+            <tr>
+              <th>Feature</th>
+              <th>Value</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>Material</td>
+              <td>80% Cotton, 20% Polyester</td>
+            </tr>
+            <tr>
+              <td>Size</td>
+              <td>One Size (Fits 6-10 US)</td>
+            </tr>
+            <tr>
+              <td>Color</td>
+              <td>White/Black Set</td>
+            </tr>
+            <tr>
+              <td>Pack</td>
+              <td>3 Pairs</td>
+            </tr>
+            <tr>
+              <td>Care</td>
+              <td>Machine Washable</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+      
+      <div class="add-to-cart-form">
+        <label for="quantity">Quantity:</label>
+        <input type="number" id="quantity" name="quantity" value="1" min="1" max="10">
+        <button class="btn add-to-cart-detail" data-id="7" data-name="Cotton Socks" data-price="99">🛒 Add to Cart</button>
+      </div>
+    </div>
+  </section>
+
+  <section class="reviews-section">
+    <h2>Customer Reviews</h2>
+    
+    <article class="review-item">
+      <blockquote class="review">
+        "Very comfortable socks! Great quality for the price."
+      </blockquote>
+      <p class="review-author">- Emma R. ⭐⭐⭐⭐⭐</p>
+      <p class="review-date">Verified Purchase | December 18, 2024</p>
+    </article>
+    
+    <article class="review-item">
+      <blockquote class="review">
+        "Soft and breathable. Perfect for daily use."
+      </blockquote>
+      <p class="review-author">- James K. ⭐⭐⭐⭐</p>
+      <p class="review-date">Verified Purchase | December 12, 2024</p>
+    </article>
+  </section>
+
+  <section class="related-products">
+    <h2>You Might Also Like</h2>
+    <div class="products-grid">
+      <article class="product-card">
+        <img src="tshirt.png" alt="T-Shirt" onerror="this.src='https://via.placeholder.com/150'">
+        <h3>T-Shirt</h3>
+        <p class="price">250</p>
+        <a href="detail-tshirt.html" class="btn-small">View</a>
+      </article>
+      <article class="product-card">
+        <img src="shoes.png" alt="Shoes" onerror="this.src='https://via.placeholder.com/150'">
+        <h3>Sports Shoes</h3>
+        <p class="price">850</p>
+        <a href="detail-shoes.html" class="btn-small">View</a>
+      </article>
+    </div>
+  </section>
+</main>
+
+<footer>
+  <p>&copy; 2024 Wander Store. All rights reserved.</p>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>

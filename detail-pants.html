@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Pants | Product Details - Wander Store</title>
+  <link rel="stylesheet" href="surio.css">
+</head>
+<body>
+
+<header>
+  <h1>🛍️ Wander Store</h1>
+  <p>Quality products at great prices</p>
+</header>
+
+<nav>
+  <a href="landing.html">Home</a>
+  <a href="products.html">Products</a>
+  <a href="cart.html">Cart</a>
+  <a href="account.html">Account</a>
+  <a href="login.html">Login</a>
+</nav>
+
+<main>
+  <section class="product-detail">
+    <div class="product-images">
+      <img src="jeans.png" alt="Denim Pants" width="300" onerror="this.src='https://via.placeholder.com/300'">
+    </div>
+    
+    <div class="product-info">
+      <h1>Denim Pants</h1>
+      <p class="price">300</p>
+      <p class="description">Classic denim jeans with perfect fit. Durable and stylish for any occasion.</p>
+      
+      <h3>Technical Specifications</h3>
+      <div class="table-wrapper">
+        <table class="product-specs">
+          <thead>
+            <tr>
+              <th>Feature</th>
+              <th>Value</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>Color</td>
+              <td>Blue</td>
+            </tr>
+            <tr>
+              <td>Size</td>
+              <td>Large</td>
+            </tr>
+            <tr>
+              <td>Material</td>
+              <td>Denim Cotton</td>
+            </tr>
+            <tr>
+              <td>Style</td>
+              <td>Regular Fit</td>
+            </tr>
+            <tr>
+              <td>Waist Type</td>
+              <td>Mid-Rise</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+      
+      <div class="add-to-cart-form">
+        <label for="quantity">Quantity:</label>
+        <input type="number" id="quantity" name="quantity" value="1" min="1" max="10">
+        <button class="btn add-to-cart-detail" data-id="4" data-name="Denim Pants" data-price="300">🛒 Add to Cart</button>
+      </div>
+    </div>
+  </section>
+
+  <section class="reviews-section">
+    <h2>Customer Reviews</h2>
+    
+    <article class="review-item">
+      <blockquote class="review">
+        "Fits perfectly! Very comfortable and great quality denim."
+      </blockquote>
+      <p class="review-author">- Kevin P. ⭐⭐⭐⭐⭐</p>
+      <p class="review-date">Verified Purchase | December 19, 2024</p>
+    </article>
+    
+    <article class="review-item">
+      <blockquote class="review">
+        "Best jeans I've bought online. True to size and durable."
+      </blockquote>
+      <p class="review-author">- Nicole R. ⭐⭐⭐⭐⭐</p>
+      <p class="review-date">Verified Purchase | December 13, 2024</p>
+    </article>
+    
+    <article class="review-item">
+      <blockquote class="review">
+        "Great value for money. The color is exactly as shown."
+      </blockquote>
+      <p class="review-author">- Brian H. ⭐⭐⭐⭐</p>
+      <p class="review-date">Verified Purchase | December 7, 2024</p>
+    </article>
+  </section>
+
+  <section class="related-products">
+    <h2>You Might Also Like</h2>
+    <div class="products-grid">
+      <article class="product-card">
+        <img src="tshirt.png" alt="T-Shirt" onerror="this.src='https://via.placeholder.com/150'">
+        <h3>T-Shirt</h3>
+        <p class="price">250</p>
+        <a href="detail-tshirt.html" class="btn-small">View</a>
+      </article>
+      <article class="product-card">
+        <img src="shoes.png" alt="Shoes" onerror="this.src='https://via.placeholder.com/150'">
+        <h3>Sports Shoes</h3>
+        <p class="price">850</p>
+        <a href="detail-shoes.html" class="btn-small">View</a>
+      </article>
+    </div>
+  </section>
+</main>
+
+<footer>
+  <p>&copy; 2024 Wander Store. All rights reserved.</p>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>

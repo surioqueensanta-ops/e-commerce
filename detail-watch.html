@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Watch | Product Details - Wander Store</title>
+  <link rel="stylesheet" href="surio.css">
+</head>
+<body>
+
+<header>
+  <h1>🛍️ Wander Store</h1>
+  <p>Quality products at great prices</p>
+</header>
+
+<nav>
+  <a href="landing.html">Home</a>
+  <a href="products.html">Products</a>
+  <a href="cart.html">Cart</a>
+  <a href="account.html">Account</a>
+  <a href="login.html">Login</a>
+</nav>
+
+<main>
+  <section class="product-detail">
+    <div class="product-images">
+      <img src="watch.png" alt="Smart Watch" width="300" onerror="this.src='https://via.placeholder.com/300'">
+    </div>
+    
+    <div class="product-info">
+      <h1>Smart Watch</h1>
+      <p class="price">779</p>
+      <p class="description">Stylish stainless steel watch with premium build quality. Water resistant and perfect for daily wear.</p>
+      
+      <h3>Technical Specifications</h3>
+      <div class="table-wrapper">
+        <table class="product-specs">
+          <thead>
+            <tr>
+              <th>Feature</th>
+              <th>Value</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>Color</td>
+              <td>Black</td>
+            </tr>
+            <tr>
+              <td>Material</td>
+              <td>Stainless Steel</td>
+            </tr>
+            <tr>
+              <td>Water Resistant</td>
+              <td>Yes (50m)</td>
+            </tr>
+            <tr>
+              <td>Display</td>
+              <td>Analog</td>
+            </tr>
+            <tr>
+              <td>Band Material</td>
+              <td>Genuine Leather</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+      
+      <div class="add-to-cart-form">
+        <label for="quantity">Quantity:</label>
+        <input type="number" id="quantity" name="quantity" value="1" min="1" max="10">
+        <button class="btn add-to-cart-detail" data-id="2" data-name="Smart Watch" data-price="779">🛒 Add to Cart</button>
+      </div>
+    </div>
+  </section>
+
+  <section class="reviews-section">
+    <h2>Customer Reviews</h2>
+    
+    <article class="review-item">
+      <blockquote class="review">
+        "Stylish and durable! Perfect for both casual and formal occasions."
+      </blockquote>
+      <p class="review-author">- David L. ⭐⭐⭐⭐⭐</p>
+      <p class="review-date">Verified Purchase | December 18, 2024</p>
+    </article>
+    
+    <article class="review-item">
+      <blockquote class="review">
+        "Great quality watch at an affordable price. The leather band is comfortable."
+      </blockquote>
+      <p class="review-author">- Anna K. ⭐⭐⭐⭐</p>
+      <p class="review-date">Verified Purchase | December 12, 2024</p>
+    </article>
+    
+    <article class="review-item">
+      <blockquote class="review">
+        "Water resistant feature works great. Highly recommend this watch!"
+      </blockquote>
+      <p class="review-author">- Robert C. ⭐⭐⭐⭐⭐</p>
+      <p class="review-date">Verified Purchase | December 8, 2024</p>
+    </article>
+  </section>
+
+  <section class="related-products">
+    <h2>You Might Also Like</h2>
+    <div class="products-grid">
+      <article class="product-card">
+        <img src="mouse.png" alt="Mouse" onerror="this.src='https://via.placeholder.com/150'">
+        <h3>Wireless Mouse</h3>
+        <p class="price">229</p>
+        <a href="detail-mouse.html" class="btn-small">View</a>
+      </article>
+      <article class="product-card">
+        <img src="tshirt.png" alt="T-Shirt" onerror="this.src='https://via.placeholder.com/150'">
+        <h3>T-Shirt</h3>
+        <p class="price">250</p>
+        <a href="detail-tshirt.html" class="btn-small">View</a>
+      </article>
+    </div>
+  </section>
+</main>
+
+<footer>
+  <p>&copy; 2024 Wander Store. All rights reserved.</p>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>

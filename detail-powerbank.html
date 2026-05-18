@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Powerbank | Product Details - Wander Store</title>
+  <link rel="stylesheet" href="surio.css">
+</head>
+<body>
+
+<header>
+  <h1>🛍️ Wander Store</h1>
+  <p>Quality products at great prices</p>
+</header>
+
+<nav>
+  <a href="landing.html">Home</a>
+  <a href="products.html">Products</a>
+  <a href="cart.html">Cart</a>
+  <a href="account.html">Account</a>
+  <a href="login.html">Login</a>
+</nav>
+
+<main>
+  <section class="product-detail">
+    <div class="product-images">
+      <img src="powerbank.png" alt="Powerbank" width="300" onerror="this.src='https://via.placeholder.com/300'">
+    </div>
+    
+    <div class="product-info">
+      <h1>Powerbank</h1>
+      <p class="price">599</p>
+      <p class="description">10000mAh portable charger. Charge your devices multiple times on the go. Compact and lightweight.</p>
+      
+      <h3>Technical Specifications</h3>
+      <div class="table-wrapper">
+        <table class="product-specs">
+          <thead>
+            <tr>
+              <th>Feature</th>
+              <th>Value</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>Capacity</td>
+              <td>10000mAh</td>
+            </tr>
+            <tr>
+              <td>Ports</td>
+              <td>2x USB-A, 1x USB-C</td>
+            </tr>
+            <tr>
+              <td>Output</td>
+              <td>Up to 18W Fast Charging</td>
+            </tr>
+            <tr>
+              <td>Input</td>
+              <td>USB-C 18W</td>
+            </tr>
+            <tr>
+              <td>Compatibility</td>
+              <td>Smartphones, Tablets, Earbuds</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+      
+      <div class="add-to-cart-form">
+        <label for="quantity">Quantity:</label>
+        <input type="number" id="quantity" name="quantity" value="1" min="1" max="10">
+        <button class="btn add-to-cart-detail" data-id="8" data-name="Powerbank" data-price="599">🛒 Add to Cart</button>
+      </div>
+    </div>
+  </section>
+
+  <section class="reviews-section">
+    <h2>Customer Reviews</h2>
+    
+    <article class="review-item">
+      <blockquote class="review">
+        "Great powerbank! Charges my phone 3 times fully."
+      </blockquote>
+      <p class="review-author">- Daniel L. ⭐⭐⭐⭐⭐</p>
+      <p class="review-date">Verified Purchase | December 19, 2024</p>
+    </article>
+    
+    <article class="review-item">
+      <blockquote class="review">
+        "Compact and lightweight. Perfect for travel."
+      </blockquote>
+      <p class="review-author">- Sarah B. ⭐⭐⭐⭐⭐</p>
+      <p class="review-date">Verified Purchase | December 14, 2024</p>
+    </article>
+    
+    <article class="review-item">
+      <blockquote class="review">
+        "Fast charging and reliable. Highly recommend!"
+      </blockquote>
+      <p class="review-author">- Chris M. ⭐⭐⭐⭐</p>
+      <p class="review-date">Verified Purchase | December 10, 2024</p>
+    </article>
+  </section>
+
+  <section class="related-products">
+    <h2>You Might Also Like</h2>
+    <div class="products-grid">
+      <article class="product-card">
+        <img src="charger.png" alt="Charger" onerror="this.src='https://via.placeholder.com/150'">
+        <h3>Fast Charger</h3>
+        <p class="price">299</p>
+        <a href="detail-charger.html" class="btn-small">View</a>
+      </article>
+      <article class="product-card">
+        <img src="mouse.png" alt="Mouse" onerror="this.src='https://via.placeholder.com/150'">
+        <h3>Wireless Mouse</h3>
+        <p class="price">229</p>
+        <a href="detail-mouse.html" class="btn-small">View</a>
+      </article>
+    </div>
+  </section>
+</main>
+
+<footer>
+  <p>&copy; 2024 Wander Store. All rights reserved.</p>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>

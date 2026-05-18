@@ -1,51 +1,59 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Sign Up</title>
-    <link rel="stylesheet" href="style.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Sign Up | Wander Store</title>
+  <link rel="stylesheet" href="surio.css">
 </head>
 <body>
-    <header>
-        <h1>Create Account</h1>
-        <nav>
-            <ul>
-                <li><a href="landing.html">Home</a></li>
-                <li><a href="products.html">Products</a></li>
-                <li><a href="cart.html">Cart</a></li>
-                <li><a href="account.html">Account</a></li>
-                <li><a href="signup.html">Sign Up</a></li>
-            </ul>
-        </nav>
-    </header>
 
-    <section>
-        <form action="account.html">
-            <div class="form-group">
-                <label>Email:</label>
-                <input type="email" required>
-            </div>
+<header>
+  <h1>🛍️ Wander Store</h1>
+  <p>Create your account</p>
+</header>
 
-            <div class="form-group">
-                <label>Password:</label>
-                <input type="password" required>
-            </div>
+<nav>
+  <a href="landing.html">Home</a>
+  <a href="products.html">Products</a>
+  <a href="login.html">Login</a>
+</nav>
 
-            <div class="form-group">
-                <label>Confirm Password:</label>
-                <input type="password" required>
-            </div>
+<main class="login-container">
+  <div class="login-card">
+    <h1>Create Account</h1>
+    <p class="login-subtitle">Join us for a better shopping experience</p>
 
-            <button type="submit">Sign Up</button>
-        </form>
+    <form id="signup-form">
+      <label for="fullname">Full Name</label>
+      <input type="text" id="fullname" name="fullname" required placeholder="Chamel">
 
-        <p>
-            Already have an account?
-            <a href="account.html">Go to My Account</a>
-        </p>
-    </section>
+      <label for="email">Email Address</label>
+      <input type="email" id="email" name="email" required placeholder="charmeldelaruz@example.com">
 
-    <script src="script.js"></script>
+      <label for="password">Password</label>
+      <input type="password" id="password" name="password" required minlength="8" placeholder="At least 8 characters">
+
+      <label for="confirm">Confirm Password</label>
+      <input type="password" id="confirm" name="confirm" required placeholder="">
+
+      <label for="phone">Phone Number</label>
+      <input type="tel" id="phone" name="phone" placeholder="Optional">
+      <p class="optional-text">We'll only use this for order updates</p>
+
+      <button type="submit" class="login-btn">Sign Up</button>
+    </form>
+
+    <p class="signup-link">
+      Already have an account? <a href="login.html">Login</a>
+    </p>
+  </div>
+</main>
+
+<footer>
+  <p>&copy; 2024 Wander Store. All rights reserved.</p>
+</footer>
+
+<script src="script.js"></script>
 </body>
 </html>

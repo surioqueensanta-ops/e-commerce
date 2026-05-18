@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Charger | Product Details - Wander Store</title>
+  <link rel="stylesheet" href="surio.css">
+</head>
+<body>
+
+<header>
+  <h1>🛍️ Wander Store</h1>
+  <p>Quality products at great prices</p>
+</header>
+
+<nav>
+  <a href="landing.html">Home</a>
+  <a href="products.html">Products</a>
+  <a href="cart.html">Cart</a>
+  <a href="account.html">Account</a>
+  <a href="login.html">Login</a>
+</nav>
+
+<main>
+  <section class="product-detail">
+    <div class="product-images">
+      <img src="charger.png" alt="Fast Charger" width="300" onerror="this.src='https://via.placeholder.com/300'">
+    </div>
+    
+    <div class="product-info">
+      <h1>Fast Charger</h1>
+      <p class="price">299</p>
+      <p class="description">High-speed USB-C fast charging brick. Compatible with smartphones, tablets, and other USB devices.</p>
+      
+      <h3>Technical Specifications</h3>
+      <div class="table-wrapper">
+        <table class="product-specs">
+          <thead>
+            <tr>
+              <th>Feature</th>
+              <th>Value</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>Port Type</td>
+              <td>USB-C</td>
+            </tr>
+            <tr>
+              <td>Output Power</td>
+              <td>20W Fast Charging</td>
+            </tr>
+            <tr>
+              <td>Compatibility</td>
+              <td>iPhone, Android, Samsung</td>
+            </tr>
+            <tr>
+              <td>Input</td>
+              <td>100-240V AC</td>
+            </tr>
+            <tr>
+              <td>Safety</td>
+              <td>Overcharge Protection</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+      
+      <div class="add-to-cart-form">
+        <label for="quantity">Quantity:</label>
+        <input type="number" id="quantity" name="quantity" value="1" min="1" max="10">
+        <button class="btn add-to-cart-detail" data-id="6" data-name="Fast Charger" data-price="299">🛒 Add to Cart</button>
+      </div>
+    </div>
+  </section>
+
+  <section class="reviews-section">
+    <h2>Customer Reviews</h2>
+    
+    <article class="review-item">
+      <blockquote class="review">
+        "Fast charging! My phone charges in half the time."
+      </blockquote>
+      <p class="review-author">- Mark T. ⭐⭐⭐⭐⭐</p>
+      <p class="review-date">Verified Purchase | December 20, 2024</p>
+    </article>
+    
+    <article class="review-item">
+      <blockquote class="review">
+        "Great quality charger. Sturdy and reliable."
+      </blockquote>
+      <p class="review-author">- Lisa C. ⭐⭐⭐⭐⭐</p>
+      <p class="review-date">Verified Purchase | December 15, 2024</p>
+    </article>
+  </section>
+
+  <section class="related-products">
+    <h2>You Might Also Like</h2>
+    <div class="products-grid">
+      <article class="product-card">
+        <img src="powerbank.png" alt="Powerbank" onerror="this.src='https://via.placeholder.com/150'">
+        <h3>Powerbank</h3>
+        <p class="price">599</p>
+        <a href="detail-powerbank.html" class="btn-small">View</a>
+      </article>
+      <article class="product-card">
+        <img src="mouse.png" alt="Mouse" onerror="this.src='https://via.placeholder.com/150'">
+        <h3>Wireless Mouse</h3>
+        <p class="price">229</p>
+        <a href="detail-mouse.html" class="btn-small">View</a>
+      </article>
+    </div>
+  </section>
+</main>
+
+<footer>
+  <p>&copy; 2024 Wander Store. All rights reserved.</p>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
